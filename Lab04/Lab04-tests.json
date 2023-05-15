@@ -1,0 +1,40 @@
+{
+    "test_cases": [
+        {
+            "id": 1,
+            "time_out": 2,
+            "input": "1\n*\n3\n",
+            "output": "1. repeat.  2. enumerate  3. double_enumerate \nWhich function do you want to test? Enter 1,2,3 accordingly.\nEnter character: Enter count: ***"
+        },
+        {
+            "id": 2,
+            "time_out": 2,
+            "input": "1\n+\n2\n",
+            "output": "1. repeat.  2. enumerate  3. double_enumerate \nWhich function do you want to test? Enter 1,2,3 accordingly.\nEnter character: Enter count: ++"
+        },
+        {
+            "id": 3,
+            "time_out": 2,
+            "input": "2\nc",
+            "output": "1. repeat.  2. enumerate  3. double_enumerate \nWhich function do you want to test? Enter 1,2,3 accordingly.\nEnter character: cba"
+        },
+        {
+            "id": 3,
+            "time_out": 2,
+            "input": "2\nf",
+            "output": "1. repeat.  2. enumerate  3. double_enumerate \nWhich function do you want to test? Enter 1,2,3 accordingly.\nEnter character: fedcba"
+        },
+        {
+            "id": 4,
+            "time_out": 2,
+            "input": "3\nc",
+            "output": "1. repeat.  2. enumerate  3. double_enumerate \nWhich function do you want to test? Enter 1,2,3 accordingly.\nEnter character: cbabc"
+        },
+        {
+            "id": 5,
+            "time_out": 2,
+            "input": "3\nf",
+            "output": "1. repeat.  2. enumerate  3. double_enumerate \nWhich function do you want to test? Enter 1,2,3 accordingly.\nEnter character: fedcbabcdef"
+        }
+    ]
+}

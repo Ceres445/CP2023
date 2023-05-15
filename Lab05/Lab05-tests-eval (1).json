@@ -1,0 +1,64 @@
+{
+  "test_cases": [
+    {
+      "id": 1,
+      "time_out": 2,
+      "input": "1\n1\n10\n1\n20\n2\n20\n3\n",
+      "output": "1. metricToImperial()  2. calculator(0) \nWhich function do you want to test? Enter 1,2 accordingly.\n1. meters to yards, 2. grams to ounces, 3. exit \n10.936000 yards\n\n1. meters to yards, 2. grams to ounces, 3. exit \n21.872000 yards\n\n1. meters to yards, 2. grams to ounces, 3. exit \n0.706000 ounces\n\n1. meters to yards, 2. grams to ounces, 3. exit \nexiting\n"
+    },
+    {
+      "id": 2,
+      "time_out": 2,
+      "input": "2\n+\n10\n+\n10\n+\n10\ne\n",
+      "output": "1. metricToImperial()  2. calculator(0) \nWhich function do you want to test? Enter 1,2 accordingly.\nBalance: 0\nBalance: 10\nBalance: 20\nBalance: 30\n"
+    },
+    {
+      "id": 3,
+      "time_out": 2,
+      "input": "2\n+\n10\n+\n10\n-\n5\nc\n+\n10\nc\nc\ne\n",
+      "output": "1. metricToImperial()  2. calculator(0) \nWhich function do you want to test? Enter 1,2 accordingly.\nBalance: 0\nBalance: 10\nBalance: 20\nBalance: 15\nBalance: 20\nBalance: 30\nBalance: 20\nBalance: 10\n"
+    },
+    {
+      "id": 4,
+      "time_out": 2,
+      "input": "1\n1\n37.8\n1\n67.5\n3\n",
+      "output": "1. metricToImperial()  2. calculator(0) \nWhich function do you want to test? Enter 1,2 accordingly.\n1. meters to yards, 2. grams to ounces, 3. exit \n41.338080 yards\n\n1. meters to yards, 2. grams to ounces, 3. exit \n73.818000 yards\n\n1. meters to yards, 2. grams to ounces, 3. exit \nexiting\n"
+    },
+    {
+      "id": 5,
+      "time_out": 2,
+      "input": "1\n2\n283.49\n2\n340.2\n2\n340.2\n3\n",
+      "output": "1. metricToImperial()  2. calculator(0) \nWhich function do you want to test? Enter 1,2 accordingly.\n1. meters to yards, 2. grams to ounces, 3. exit \n10.007197 ounces\n\n1. meters to yards, 2. grams to ounces, 3. exit \n12.009060 ounces\n\n1. meters to yards, 2. grams to ounces, 3. exit \n12.009060 ounces\n\n1. meters to yards, 2. grams to ounces, 3. exit \nexiting\n"
+    },
+    {
+      "id": 6,
+      "time_out": 2,
+      "input": "2\n+\n0\ne\n",
+      "output": "1. metricToImperial()  2. calculator(0) \nWhich function do you want to test? Enter 1,2 accordingly.\nBalance: 0\nBalance: 0\n"
+    },
+    {
+      "id": 7,
+      "time_out": 2,
+      "input": "2\n+\n0\n-\n0\nc\nc\nc\n",
+      "output": "1. metricToImperial()  2. calculator(0) \nWhich function do you want to test? Enter 1,2 accordingly.\nBalance: 0\nBalance: 0\nBalance: 0\nBalance: 0\nBalance: 0\n"
+    },
+    {
+      "id": 8,
+      "time_out": 2,
+      "input": "2\n+\n89\n-\n89\ne\n",
+      "output": "1. metricToImperial()  2. calculator(0) \nWhich function do you want to test? Enter 1,2 accordingly.\nBalance: 0\nBalance: 89\nBalance: 0\n"
+    },
+    {
+      "id": 9,
+      "time_out": 2,
+      "input": "2\n+\n89\n-\n89\nc\ne\n",
+      "output": "1. metricToImperial()  2. calculator(0) \nWhich function do you want to test? Enter 1,2 accordingly.\nBalance: 0\nBalance: 89\nBalance: 0\nBalance: 89\n"
+    },
+    {
+      "id": 10,
+      "time_out": 2,
+      "input": "2\n+\n89\n-\n289\nc\n-\n300\nc\nc\nc\n",
+      "output": "1. metricToImperial()  2. calculator(0) \nWhich function do you want to test? Enter 1,2 accordingly.\nBalance: 0\nBalance: 89\nBalance: -200\nBalance: 89\nBalance: -211\nBalance: 89\nBalance: 0\n"
+    }
+  ]
+}

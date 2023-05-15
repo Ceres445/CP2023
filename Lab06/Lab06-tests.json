@@ -1,0 +1,28 @@
+{
+    "test_cases": [
+        {
+            "id": 1,
+            "time_out": 2,
+            "input": "1\n2\n1 2\n",
+            "output": "This program supports TWO operations:\n\t1. Check if the given sequence of integers is in a non-decreasing order,\n\t2. Search a key in a non-decreasing sequcne of integers.\n\nChoose an operation: How many numbers do you want to enter? Enter 2 integers (duplicates allowed): The integers are in a non-decreasing order.\n"
+        },
+        {
+            "id": 2,
+            "time_out": 2,
+            "input": "1\n2\n2 1\n",
+            "output": "This program supports TWO operations:\n\t1. Check if the given sequence of integers is in a non-decreasing order,\n\t2. Search a key in a non-decreasing sequcne of integers.\n\nChoose an operation: How many numbers do you want to enter? Enter 2 integers (duplicates allowed): The integers are not in a non-decreasing order.\n"
+        },
+        {
+            "id": 3,
+            "time_out": 2,
+            "input": "2\n2\n7 9\n9\n",
+            "output": "This program supports TWO operations:\n\t1. Check if the given sequence of integers is in a non-decreasing order,\n\t2. Search a key in a non-decreasing sequcne of integers.\n\nChoose an operation: How many numbers do you want to enter? Enter 2 integers in non-decreasing order (no duplicates): Enter the key to search:  - Checking index 0\n - Checking index 1\n9 found at 1\n"
+        },
+        {
+            "id": 4,
+            "time_out": 2,
+            "input": "2\n2\n7 9\n8\n",
+            "output": "This program supports TWO operations:\n\t1. Check if the given sequence of integers is in a non-decreasing order,\n\t2. Search a key in a non-decreasing sequcne of integers.\n\nChoose an operation: How many numbers do you want to enter? Enter 2 integers in non-decreasing order (no duplicates): Enter the key to search:  - Checking index 0\n - Checking index 1\n8 not found.\n"
+        }
+    ]
+}
