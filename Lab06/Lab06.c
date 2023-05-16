@@ -20,7 +20,7 @@ bool is_sorted(int nums[], int length)
             answer = true;
         }
         else{
-            answer = false;
+            return false;
         }
         i++;
     }
