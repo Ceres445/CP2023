@@ -12,7 +12,7 @@
  */
 bool is_sorted(int nums[], int length)
 {
-    bool answer = false;
+    bool answer = true;
 
     int i = 0;
     while(i < length - 1){
