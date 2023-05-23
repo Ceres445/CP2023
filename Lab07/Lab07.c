@@ -15,7 +15,7 @@
  */
 int num_vowels(char str[]) {
     int count = 0;
-    char vowels[] = {'a', 'e', 'i', 'o', 'u'};
+    char vowels[] = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
     int i = 0;
     while (i < strlen(str)) {
         for (int j = 0; j < 5; j++) {
