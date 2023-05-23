@@ -48,21 +48,19 @@ void longest_substring(char str[]) {
     char longest[100];
 
     int hash[256] = {0};
-    int i = 0, j = 0, start = 0, end = 0;
+    int i = 0, j = 0, start = 0 ;
     int starti[strlen(str)], endi[strlen(str)];
     while (i < strlen(str)) {
         if (hash[str[i]] == 0) {
             hash[str[i]] = i;
-            end = i;
         } else {
             // substring without repeating characters
             starti[j] = start;
-            endi[j] = end ;
+            endi[j] = i-1 ;
             // printf("%d %d\n", starti[j], endi[j]);
             j++;
             // next substring
             start = hash[str[i]] + 1;
-            end = i;
 
             // clear hash
             for (int k = 0; k < 256; k++) {
@@ -70,19 +68,20 @@ void longest_substring(char str[]) {
             }
 
             // update hash with current substring
-            for (int k = start; k <= end; k++) {
+            for (int k = start; k <= i; k++) {
                 hash[str[k]] = k;
             }
         }
         i++;
     }
     starti[j] = start;
-    endi[j] = end;
+    endi[j] = i;
     j++;
 
     // Your code here
     int max = 0;
     // find maximum length substring
+    int end = 0;
     for (int i = 0; i < j; i++) {
         if (endi[i] - starti[i] >= max) {
             max = endi[i] - starti[i];
