@@ -3,9 +3,12 @@ subarrays = []
 string = input("Enter string")
 for i, el in enumerate(string):
     if el in string[start:i]:
+         # subarray will be from start to before current character
          subarrays.append((start, i -1))
+         # new start will be the character after the first occurrence of the current character
          start = string.find(el, start, i) + 1
 
+# final subarray will be from current start to end of the string
 subarrays.append((start, len(string) - 1))
 
 
