@@ -1,0 +1,28 @@
+{
+    "test_cases": [
+        {
+            "id": 1,
+            "time_out": 2,
+            "input": "1\nCSF111\n",
+            "output": "This program supports TWO operations:\n\t1. Count the number of vowels in a string,\n\t2. Find the longest substring with no repeating characters.\n\nChoose an operation (1 or 2): Enter the string: The number of vowels in CSF111 is 0\n"
+        },
+        {
+            "id": 2,
+            "time_out": 2,
+            "input": "1\nBitsPilani\n",
+            "output": "This program supports TWO operations:\n\t1. Count the number of vowels in a string,\n\t2. Find the longest substring with no repeating characters.\n\nChoose an operation (1 or 2): Enter the string: The number of vowels in BitsPilani is 4\n"
+        },
+        {
+            "id": 3,
+            "time_out": 2,
+            "input": "2\nCSF111\n",
+            "output": "This program supports TWO operations:\n\t1. Count the number of vowels in a string,\n\t2. Find the longest substring with no repeating characters.\n\nChoose an operation (1 or 2): Enter the string: Longest substring with no repeating characters: CSF1\n"
+        },
+        {
+            "id": 4,
+            "time_out": 2,
+            "input": "2\nBitsPilani\n",
+            "output": "This program supports TWO operations:\n\t1. Count the number of vowels in a string,\n\t2. Find the longest substring with no repeating characters.\n\nChoose an operation (1 or 2): Enter the string: Longest substring with no repeating characters: tsPilan\n"
+        }
+    ]
+}
