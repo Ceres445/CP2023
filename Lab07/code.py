@@ -1,6 +1,7 @@
 start = 0
 subarrays = []
 string = input("Enter string")
+# string = "BITSPilaniGoaCampus";
 for i, el in enumerate(string):
     if el in string[start:i]:
          # subarray will be from start to before current character
