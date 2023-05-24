@@ -14,28 +14,28 @@
  *  0  num_vowels("CSF111")
  */
 int num_vowels(char str[]) {
-    int count = 0;
-    char vowels[] = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
-    int i = 0;
-    while (i < strlen(str)) {
-        for (int j = 0; j < 5; j++) {
-            if (str[i] == vowels[j]) {
-                count++;
-            }
-        }
-        i++;
+  int count = 0;
+  char vowels[] = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
+  int i = 0;
+  while (i < strlen(str)) {
+    for (int j = 0; j < 5; j++) {
+      if (str[i] == vowels[j]) {
+        count++;
+      }
     }
+    i++;
+  }
 
-    return count;
+  return count;
 }
 
 int helper(char str[], int start, int end) {
-    for (int i = start; i < end; i++) {
-        if (str[i] == str[end]) {
-            return i + 1;
-        }
+  for (int i = start; i < end; i++) {
+    if (str[i] == str[end]) {
+      return i;
     }
-    return 0;
+  }
+  return -1;
 }
 
 /**
@@ -54,73 +54,63 @@ int helper(char str[], int start, int end) {
  *  Prints "TSPILAN"  longest_substring("BITSPILANIGOACAMPUS")
  */
 void longest_substring(char str[]) {
-    char longest[100];
+  char longest[100];
 
-    int hash[256] = {0};
-    int i = 0, j = 0, start = 0 ;
-    int starti[strlen(str)], endi[strlen(str)];
-    while (i < strlen(str)) {
-        if (helper(str, start, i) != 0){
-            // substring without repeating characters
-            starti[j] = start;
-            endi[j] = i-1 ;
-            // printf("%d %d\n", starti[j], endi[j]);
-            j++;
-            // next substring
-            start = helper(str, start, i);
-
-        }
-        i++;
+  int i = 0, j = 0, start = 0, length = 0, startMax = 0;
+  while (i < strlen(str)) {
+    if (helper(str, start, i) != -1) {
+      // substring without repeating characters
+      if ((i - start) >= length) {
+        startMax = start;
+        length = i - start;
+      }
+      // next substring
+      start = helper(str, start, i) + 1;
     }
-    starti[j] = start;
-    endi[j] = i-1;
+    i++;
+  }
+
+  if ((i - start) >= length) {
+    startMax = start;
+    length = i - start;
+  }
+
+  // Your code here
+  // printf("%d %d\n", starti[i], endi[i]);
+  // printf("%d %d\n", start, end);
+  int end = 0;
+  j = 0;
+  for (int i = startMax; i < startMax + length; i++) {
+    longest[j] = str[i];
     j++;
+  }
+  // Add terminate character to the end of the string
+  longest[j] = '\0';
 
-    // Your code here
-    int max = 0;
-    // find maximum length substring
-    int end = 0;
-    for (int i = 0; i < j; i++) {
-        if (endi[i] - starti[i] >= max) {
-            max = endi[i] - starti[i];
-            start = starti[i];
-            end = endi[i];
-        }
-        // printf("%d %d\n", starti[i], endi[i]);
-    }
-    // printf("%d %d\n", start, end);
-    j = 0;
-    for (int i = start; i <= end; i++) {
-        longest[j] = str[i];
-        j++;
-    }
-    // Add terminate character to the end of the string
-    longest[j] = '\0';
-
-    printf("Longest substring with no repeating characters: %s\n", longest);
+  printf("Longest substring with no repeating characters: %s\n", longest);
 }
 
 int main() {
-    printf("This program supports TWO operations:\n");
-    printf("\t1. Count the number of vowels in a string,\n");
-    printf("\t2. Find the longest substring with no repeating characters.\n\n");
-    printf("Choose an operation (1 or 2): ");
-    int operation = 0;
-    scanf("%d", &operation);
+  printf("This program supports TWO operations:\n");
+  printf("\t1. Count the number of vowels in a string,\n");
+  printf("\t2. Find the longest substring with no repeating characters.\n\n");
+  printf("Choose an operation (1 or 2): ");
+  int operation = 0;
+  scanf("%d", &operation);
 
-    const int MAX_LENGTH = 100;
-    char str[MAX_LENGTH];
+  const int MAX_LENGTH = 100;
+  char str[MAX_LENGTH];
 
-    printf("Enter the string: ");
-    scanf("%s", str);
+  printf("Enter the string: ");
+  scanf("%s", str);
 
-    if (operation == 1) {
-        printf("The number of vowels in %s is %d\n", str, num_vowels(str));
-    }
+  if (operation == 1) {
+    printf("The number of vowels in %s is %d\n", str, num_vowels(str));
+  }
 
-    else if (operation == 2) {
-        longest_substring(str);
-    }
+  else if (operation == 2) {
+    longest_substring(str);
+  }
 
-    return 0;
+  return 0;
 }

@@ -2,22 +2,19 @@ start = 0
 subarrays = []
 string = input("Enter string")
 # string = "BITSPilaniGoaCampus";
+length = 0;
+answer = ""
 for i, el in enumerate(string):
     if el in string[start:i]:
-         # subarray will be from start to before current character
-         subarrays.append((start, i -1))
-         # new start will be the character after the first occurrence of the current character
-         start = string.find(el, start, i) + 1
+        # subarray will be from start to before current character
+        if i - start >= length :
+            answer = string[start:i]
+            length = i - start
+        # new start will be the character after the first occurrence of the current character
+        start = string.find(el, start, i) + 1
 
 # final subarray will be from current start to end of the string
-subarrays.append((start, len(string) - 1))
+if len(string) - start >= length :
+    answer = string[start:len(string)]
 
-
-max = 0
-max_subarray = ""
-for start, end in subarrays:
-    if end - start >= max:
-        max = end - start
-        max_subarray = string[start:end+1]
-
-print(max_subarray)
+print(answer)
