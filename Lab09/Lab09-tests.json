@@ -1,0 +1,28 @@
+{
+    "test_cases": [
+        {
+            "id": 1,
+            "time_out": 4,
+            "input": "1\n10000\nBITS_Pilani.\n1\n2\n3\n1\n2\n1\n2\n20000\nIts_Magic.\n1\n1\n2\n2\n3\n3\n1\n",
+            "output": "Enter employee id:\nEnter employee's salary:\nEnter Favorite Quote (each word is separated by '_' and the phrase ends with a '.'):\nEnter sick leaves taken by an employee for each month during the first 6 months\nEnter employee id:\nEnter employee's salary:\nEnter Favorite Quote (each word is separated by '_' and the phrase ends with a '.'):\nEnter sick leaves taken by an employee for each month during the first 6 months\nID of the employee with the highest salary is: 2\nThis program supports TWO operations for the employee with the highest salary:\n\t1. Find the longest word in the employee's favorite quote,\n\t2. Find the number of sick leaves that appears the most (i.e. mode) and the average number of sick leaves taken.\n\nChoose an operation (1 or 2): The longest word is: Magic\n"
+        },
+        {
+            "id": 2,
+            "time_out": 4,
+            "input": "1\n10000\nBITS_Pilani.\n1\n2\n3\n1\n2\n1\n2\n5000\nIts_Magic.\n1\n1\n2\n2\n3\n3\n1\n",
+            "output": "Enter employee id:\nEnter employee's salary:\nEnter Favorite Quote (each word is separated by '_' and the phrase ends with a '.'):\nEnter sick leaves taken by an employee for each month during the first 6 months\nEnter employee id:\nEnter employee's salary:\nEnter Favorite Quote (each word is separated by '_' and the phrase ends with a '.'):\nEnter sick leaves taken by an employee for each month during the first 6 months\nID of the employee with the highest salary is: 1\nThis program supports TWO operations for the employee with the highest salary:\n\t1. Find the longest word in the employee's favorite quote,\n\t2. Find the number of sick leaves that appears the most (i.e. mode) and the average number of sick leaves taken.\n\nChoose an operation (1 or 2): The longest word is: Pilani\n"
+        },
+        {
+            "id": 3,
+            "time_out": 4,
+            "input": "1\n10000\nBITS_Pilani.\n1\n2\n3\n1\n2\n1\n2\n5000\nIts_Magic.\n1\n1\n2\n2\n3\n3\n2\n",
+            "output": "Enter employee id:\nEnter employee's salary:\nEnter Favorite Quote (each word is separated by '_' and the phrase ends with a '.'):\nEnter sick leaves taken by an employee for each month during the first 6 months\nEnter employee id:\nEnter employee's salary:\nEnter Favorite Quote (each word is separated by '_' and the phrase ends with a '.'):\nEnter sick leaves taken by an employee for each month during the first 6 months\nID of the employee with the highest salary is: 1\nThis program supports TWO operations for the employee with the highest salary:\n\t1. Find the longest word in the employee's favorite quote,\n\t2. Find the number of sick leaves that appears the most (i.e. mode) and the average number of sick leaves taken.\n\nChoose an operation (1 or 2): The number of sick leaves appearing the most: 1\nThe average number of sick leaves: 1.7\n"
+        },
+        {
+            "id": 3,
+            "time_out": 4,
+            "input": "1\n10000\nBITS_Pilani.\n1\n2\n3\n1\n2\n1\n2\n20000\nIts_Magic.\n1\n1\n2\n2\n3\n3\n2\n",
+            "output": "Enter employee id:\nEnter employee's salary:\nEnter Favorite Quote (each word is separated by '_' and the phrase ends with a '.'):\nEnter sick leaves taken by an employee for each month during the first 6 months\nEnter employee id:\nEnter employee's salary:\nEnter Favorite Quote (each word is separated by '_' and the phrase ends with a '.'):\nEnter sick leaves taken by an employee for each month during the first 6 months\nID of the employee with the highest salary is: 2\nThis program supports TWO operations for the employee with the highest salary:\n\t1. Find the longest word in the employee's favorite quote,\n\t2. Find the number of sick leaves that appears the most (i.e. mode) and the average number of sick leaves taken.\n\nChoose an operation (1 or 2): The number of sick leaves appearing the most: 3\nThe average number of sick leaves: 2.0\n"
+        }
+    ]
+}
