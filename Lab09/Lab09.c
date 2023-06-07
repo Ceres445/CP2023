@@ -75,17 +75,19 @@ void longest_word(char *s) {
   char longest[50];
 
   int maxi = 0;
+  int starti = 0;
   int prev = 0;
   for (int i = 0; s[i] != '\0'; i++) {
     if (s[i] == '_' || s[i] == '.') {
-      if (i - prev > maxi) {
+      if (i - prev >= maxi) {
         maxi = i - prev;
-        for (int j = 0; j < maxi; j++)
-          longest[j] = s[prev + j];
+        starti = prev;
       }
       prev = i + 1;
     }
   }
+  for (int j = 0; j < maxi; j++)
+    longest[j] = s[starti + j];
   longest[maxi] = '\0';
 
   printf("The longest word is: %s\n", longest);
@@ -178,8 +180,8 @@ emp get_input() {
 }
 
 int main() {
-  // emp e1 = get_input();
-  // emp e2 = get_input();
+  emp e1 = get_input();
+  emp e2 = get_input();
 
   /*
     //UNCOMMENT this block if you want to test your code quickly with
@@ -192,8 +194,8 @@ int main() {
 
 
   */
-  emp e1 = {1, 10000, "BITS_Pilani.", {1, 2, 3, 1, 2, 1}};
-  emp e2 = {2, 20000, "Its_Magic.", {1, 1, 2, 2, 3, 3}};
+  // emp e1 = {1, 10000, "BITS_Pilani.", {1, 2, 3, 1, 2, 1}};
+  // emp e2 = {2, 20000, "Life_is_good.", {1, 1, 2, 2, 3, 3}};
 
   // display(e1);
   // display(e2);
