@@ -118,15 +118,32 @@ void cal_sick_leaves(int *arr, int len, int *mode, double *avg) {
 
   int max = 0;
   int maxi = 0;
+  int starti = 0;
   for (int i = 0; i < 6; i++) {
     int count = 0;
     for (int j = 0; j < 6; j++) {
       if (arr[i] == arr[j])
         count++;
     }
-    if (count >= max) {
+    if (count > max) {
       max = count;
       maxi = i;
+
+    } else if (count == max) {
+      int k = 0;
+      int t = 0;
+      int cur = 0;
+      while (k <= i && t == 0) {
+        if (arr[k] == arr[maxi]) {
+          cur = k;
+          t = 1;
+        }
+        k++;
+      }
+      if (cur <= starti) {
+        starti = cur;
+        maxi = i;
+      }
     }
   }
 
@@ -160,12 +177,12 @@ emp get_input() {
 }
 
 int main() {
-  emp e1 = get_input();
-  emp e2 = get_input();
+  // emp e1 = get_input();
+  // emp e2 = get_input();
 
   /*
-    //UNCOMMENT this block if you want to test your code quickly with different
-    values.
+    //UNCOMMENT this block if you want to test your code quickly with
+    different values.
     //Keep in mind to COMMENT this block once you are done with testing else
     test cases WILL NOT PASS.
     //Sample inputs are given. Change it to test different cases.
@@ -174,8 +191,8 @@ int main() {
 
 
   */
-  // emp e1 = {1, 10000, "BITS_Pilani.", {1, 2, 3, 1, 2, 1}};
-  // emp e2 = {2, 20000, "Its_Magic.", {1, 1, 2, 2, 3, 3}};
+  emp e1 = {1, 10000, "BITS_Pilani.", {1, 2, 3, 1, 2, 1}};
+  emp e2 = {2, 20000, "Its_Magic.", {1, 1,  3, 3, 3, 1}};
 
   // display(e1);
   // display(e2);
