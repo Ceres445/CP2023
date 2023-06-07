@@ -140,9 +140,10 @@ void cal_sick_leaves(int *arr, int len, int *mode, double *avg) {
         }
         k++;
       }
-      if (cur <= starti) {
+      if (cur >= starti) {
         starti = cur;
         maxi = i;
+        max = count;
       }
     }
   }
@@ -192,7 +193,7 @@ int main() {
 
   */
   emp e1 = {1, 10000, "BITS_Pilani.", {1, 2, 3, 1, 2, 1}};
-  emp e2 = {2, 20000, "Its_Magic.", {1, 1,  3, 3, 3, 1}};
+  emp e2 = {2, 20000, "Its_Magic.", {1, 1, 2, 2, 3, 3}};
 
   // display(e1);
   // display(e2);
