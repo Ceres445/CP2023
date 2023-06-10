@@ -1,0 +1,28 @@
+{
+  "test_cases": [
+    {
+      "id": 1,
+      "time_out": 2,
+      "input": "2 0 0 0 1 1",
+      "output": "Enter the number of points along the path (at least two), followed by the x,y coordinates of each point:\nThis program supports two operations:\n\t1. Display the given path\n\t2. Compute the total distance\nEnter your choice: Given path: [(0.00,0.00), (0.00,1.00)]\n"
+    },
+    {
+      "id": 2,
+      "time_out": 2,
+      "input": "3 1 1.5 -2.5 -3 0 .5 1",
+      "output": "Enter the number of points along the path (at least two), followed by the x,y coordinates of each point:\nThis program supports two operations:\n\t1. Display the given path\n\t2. Compute the total distance\nEnter your choice: Given path: [(1.00,1.50), (-2.50,-3.00), (0.00,0.50)]\n"
+    },
+    {
+      "id": 3,
+      "time_out": 2,
+      "input": "2 0 0 0 1 2",
+      "output": "Enter the number of points along the path (at least two), followed by the x,y coordinates of each point:\nThis program supports two operations:\n\t1. Display the given path\n\t2. Compute the total distance\nEnter your choice: Total distance: 1.00\n"
+    },
+    {
+      "id": 4,
+      "time_out": 2,
+      "input": "3 1 1.5 -2.5 -3 0 .5 2",
+      "output": "Enter the number of points along the path (at least two), followed by the x,y coordinates of each point:\nThis program supports two operations:\n\t1. Display the given path\n\t2. Compute the total distance\nEnter your choice: Total distance: 10.00\n"
+    }
+  ]
+}
