@@ -70,7 +70,7 @@ def autoeval(code_path, testcases_path, flag=None):
     # Compilation errors need to be handled here
     if flag == "-i":
         compilation_process = subprocess.run(
-            "gcc " + code_path + " -w" + " -lm",
+            "gcc " + code_path + " -w",
             text=True,
             timeout=5,
             shell=True,
