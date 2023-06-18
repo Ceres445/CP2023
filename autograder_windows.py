@@ -81,7 +81,7 @@ def autoeval(code_path, testcases_path, flag=None):
         )
     else:
         compilation_process = subprocess.run(
-            "gcc " + code_path,
+            "gcc " + code_path + " -lm",
             text=True,
             timeout=5,
             shell=True,
