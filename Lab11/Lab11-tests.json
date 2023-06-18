@@ -1,0 +1,28 @@
+{
+  "test_cases": [
+    {
+      "id": 1,
+      "time_out": 2,
+      "input": "1\np\n",
+      "output": "This program supports two operations:\n\t1. Translate a single ASCII character to Braille\n\t2. Translate a text file to Braille\nEnter your option: Enter a letter or a digit: ..\n.-\n.-\n\n"
+    },
+    {
+      "id": 2,
+      "time_out": 2,
+      "input": "1\n?\n",
+      "output": "This program supports two operations:\n\t1. Translate a single ASCII character to Braille\n\t2. Translate a text file to Braille\nEnter your option: Enter a letter or a digit: "
+    },
+    {
+      "id": 1,
+      "time_out": 2,
+      "input": "2\ninput.txt\noutput.txt\n",
+      "output": "This program supports two operations:\n\t1. Translate a single ASCII character to Braille\n\t2. Translate a text file to Braille\nEnter your option: Input file: Enter valid path: Output file: Enter valid path: ..\n--\n--\n\n--\n--\n--\n\n..\n.-\n.-\n\n"
+    },
+    {
+      "id": 2,
+      "time_out": 2,
+      "input": "2\nwrongfilename.txt\ninput.txt\noutput.txt\n",
+      "output": "This program supports two operations:\n\t1. Translate a single ASCII character to Braille\n\t2. Translate a text file to Braille\nEnter your option: Input file: Enter valid path: Cannot open wrongfilename.txt; Enter valid file path again: Output file: Enter valid path: ..\n--\n--\n\n--\n--\n--\n\n..\n.-\n.-\n\n"
+    }
+  ]
+}
