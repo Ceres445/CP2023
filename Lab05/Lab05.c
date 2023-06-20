@@ -56,7 +56,6 @@ void metricToImperial()
         double n;
         scanf(" %lf", &n);
         printf("%lf yards\n\n", n * 1.0936);
-
         metricToImperial();
     }
     else if (option == 2)
