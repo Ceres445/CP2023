@@ -70,7 +70,7 @@ def autoeval(code_path, testcases_path, flag=None):
     # Compilation errors need to be handled here
     if flag == "-i":
         compilation_process = subprocess.run(
-            "gcc " + code_path + " -w",
+            "gcc " + code_path + " -w" + " -lm",
             text=True,
             timeout=5,
             shell=True,
@@ -78,7 +78,7 @@ def autoeval(code_path, testcases_path, flag=None):
         )
     else:
         compilation_process = subprocess.run(
-            "gcc " + code_path,
+            "gcc " + code_path + " -lm",
             text=True,
             timeout=5,
             shell=True,
@@ -184,6 +184,18 @@ def autoeval(code_path, testcases_path, flag=None):
                 testcase_passed = process_stdout == test["output"]
                 print(process_stdout)
                 result = "Passed" if process_stdout == test["output"] else "Failed"
+                if result == "Failed":
+                    test["output"] += "L" * 50
+                    total = [
+                        (process_stdout[i], test["output"][i])
+                        for i in range(len(process_stdout))
+                        if process_stdout[i] != test["output"][i]
+                    ]
+                    print(total)
+                    a = "".join([i[0] for i in total])
+                    b = "".join([i[1] for i in total])
+                    print("Your output: ", a)
+                    print("expected: ", b)
                 print("---Result: " + result + "---")
 
             elif flag == "-t":

@@ -192,8 +192,8 @@ emp get_input()
 
 int main()
 {
-    //   emp e1 = get_input();
-    //   emp e2 = get_input();
+      emp e1 = get_input();
+      emp e2 = get_input();
 
     /*
       //UNCOMMENT this block if you want to test your code quickly with
@@ -206,8 +206,8 @@ int main()
 
 
     */
-    emp e1 = {1, 10000, "BITS_Pilani.", {1, 2, 3, 1, 2, 1}};
-    emp e2 = {2, 20000, "Life_is_good.", {1, 2, 1, 2, 2, 1}};
+    // emp e1 = {1, 10000, "BITS_Pilani.", {1, 2, 3, 1, 2, 1}};
+    // emp e2 = {2, 20000, "Life_is_good.", {1, 2, 1, 2, 2, 1}};
 
     // display(e1);
     // display(e2);
