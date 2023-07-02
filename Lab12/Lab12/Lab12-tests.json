@@ -1,0 +1,28 @@
+{
+    "test_cases": [
+        {
+            "id": 1,
+            "time_out": 2,
+            "input": "2\n4\nAAAA\n10\n20\n30\nBBBB\n10\n20\n30\n1\n",
+            "output": "Enter the number of students: Enter the maximum length of a student's first name: Enter name and marks of 3 subjects:\nEnter name and marks of 3 subjects:\nThis program supports TWO operations:\n\t1. Print the student's name with the highest total marks,\n\t2. Print all characters of the longest name in alphabetical order.\n\nChoose an operation (1 or 2): The student with the highest total marks is BBBB\n"
+        },
+        {
+            "id": 2,
+            "time_out": 2,
+            "input": "2\n4\nAAAA\n20\n20\n30\nBBBB\n10\n20\n30\n1\n",
+            "output": "Enter the number of students: Enter the maximum length of a student's first name: Enter name and marks of 3 subjects:\nEnter name and marks of 3 subjects:\nThis program supports TWO operations:\n\t1. Print the student's name with the highest total marks,\n\t2. Print all characters of the longest name in alphabetical order.\n\nChoose an operation (1 or 2): The student with the highest total marks is AAAA\n"
+        },
+        {
+            "id": 3,
+            "time_out": 2,
+            "input": "3\n4\nabBA\n20\n20\n30\nabc\n10\n20\n30\naBBa\n10\n20\n30\n2\n",
+            "output": "Enter the number of students: Enter the maximum length of a student's first name: Enter name and marks of 3 subjects:\nEnter name and marks of 3 subjects:\nEnter name and marks of 3 subjects:\nThis program supports TWO operations:\n\t1. Print the student's name with the highest total marks,\n\t2. Print all characters of the longest name in alphabetical order.\n\nChoose an operation (1 or 2): The characters in the longest student's name in alphabetical order are AaBb\n"
+        },
+        {
+            "id": 4,
+            "time_out": 2,
+            "input": "3\n4\nabB\n20\n20\n30\nabc\n10\n20\n30\naBBa\n10\n20\n30\n2\n",
+            "output": "Enter the number of students: Enter the maximum length of a student's first name: Enter name and marks of 3 subjects:\nEnter name and marks of 3 subjects:\nEnter name and marks of 3 subjects:\nThis program supports TWO operations:\n\t1. Print the student's name with the highest total marks,\n\t2. Print all characters of the longest name in alphabetical order.\n\nChoose an operation (1 or 2): The characters in the longest student's name in alphabetical order are aaBB\n"
+        }
+    ]
+}
