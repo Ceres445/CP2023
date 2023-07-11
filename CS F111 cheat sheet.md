@@ -50,6 +50,12 @@ tag: clang, cp2023, acads
  ### Direction 
 	== -> Evaluates from left to right 
 	All other operators evaulate from right to left.
+
+## Tips 
+ - `++i` returns i+1 and sets value of i to be i + 1
+ - `i++` returns i and sets value of i to be i + 1
+ - `d%10` returns the last digit in an integer 
+ 
  
 
 ## Common functions from libraries
@@ -133,13 +139,26 @@ struct Student {
 
 typedef struct Prof { // Prof is optional
 	char *name; // To allow for dynamic memory allocation
-	int id;
+	int age;
 } prof;
 
 // Usage 
 struct Student John = {"John", 22}; // need to write struct
-prof Kundu = {.name = "Kundu", .id = 23}; // Alternate way of defining 
+prof Kundu = {.name = "Kundu", .age = 23}; // Alternate way of defining 
 
+bool is_adult(prof *AnotherKundu) {
+  if (AnotherKundu->age >=
+      18) // Membership operator translates to (*AnotherKundu).age
+    return true;
+  else
+    return false;
+}
+
+void change_name(prof *MoreKundu) {
+  char *name = malloc(20 * sizeof(char));
+  scanf("%s", name); // maximum 20 letter name
+  MoreKundu->name = name;
+}
 ```
 
 ## Multidimensional arrays
