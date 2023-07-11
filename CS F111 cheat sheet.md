@@ -6,6 +6,9 @@ tag: clang, cp2023, acads
 ## Important ASCII values
  - 0 -> '\\0'
  - 10 - '\\n'
+ - 32 - space
+ - 48 - '0'
+ - 57 - '9'
  - 65 - 'A'
  - 90 - 'Z'
  - 97 - 'a'
@@ -50,6 +53,19 @@ tag: clang, cp2023, acads
  
 
 ## Common functions from libraries
+
+```c 
+#include <ctype.h>
+isalpha(char)
+isspace(char)
+isnum(char)
+
+#include <string.h>
+strlen(*char) // from *char to '\0'
+strcmp(*char1, *char2) // returns 0 if both are same
+strcpy(*destination, *source)
+
+```
 
  ```c
  #include <stdio.h>
@@ -162,7 +178,7 @@ printf("%d", 25 / 5 * 5)
 ```
  - Code will be included for compilation if `#define VALUE exists` or code is compiled with the value in D flag. `gcc code.c -D VALUE`
 
-### CLI
+## CLI
 
 ```c
 int main(int argc, char **argv){
