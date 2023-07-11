@@ -12,7 +12,7 @@ tag: clang, cp2023, acads
  - 65 - 'A'
  - 90 - 'Z'
  - 97 - 'a'
- - 120 - 'z'
+ - 122 - 'z'
 
 ## Formatting with scanf and printf
  ### Format codes
